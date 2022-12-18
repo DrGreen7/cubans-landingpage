@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background: #424530;
+  line-height: 1.2;
+}
+
+/* general */
+.btn--text {
+  display: inline-block;
+  background: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #e09132;
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  padding: 0 6rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+.nav__logo {
+  font-size: 3rem;
+  transition: all 0.3s;
+  color: #e09132;
+}
+.nav__links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:visited,
+.nav__link:link {
+  font-size: 1.7rem;
+  color: #a58e74;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link--btn:visited,
+.nav__link--btn:link {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background: #ffefcd;
+  color: #424530;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  background: #e09132;
+  color: #ffefcd;
+  transition: all 0.5s;
+}
+
+/* header */
+header {
+  padding: 0 3rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  flex: 1;
+  max-width: 115rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  row-gap: 3rem;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  justify-items: start;
+  color: #ffefcd;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.header__img {
+  width: 50rem;
+  grid-column: 2/3;
+  grid-row: 1 / span 4;
+  border: 2px solid #ffefcd;
+  border-radius: 5px;
+}
+
+.highlight {
+  position: relative;
+  color: #424530;
+}
+
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 83%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-color: #e09132;
+}
