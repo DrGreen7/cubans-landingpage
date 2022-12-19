@@ -14,9 +14,33 @@ body {
   box-sizing: border-box;
   background: #424530;
   line-height: 1.2;
+  color: #ffefcd;
 }
 
 /* general */
+.section {
+  padding: 15rem 3rem;
+}
+
+.section__title {
+  max-width: 80rem;
+  margin: 0 auto 8rem auto;
+}
+
+.section__description {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #e09132;
+  margin-bottom: 1rem;
+}
+
+.section__header {
+  font-size: 4rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
 .btn--text {
   display: inline-block;
   background: none;
@@ -40,6 +64,9 @@ nav {
   width: 100%;
   z-index: 100;
   position: fixed;
+  background: rgba(66, 69, 48, 0.95);
+
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav__logo {
@@ -139,4 +166,31 @@ h4 {
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-color: #e09132;
+}
+
+/* cigars */
+.cigars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 12rem;
+}
+
+.cigars__img {
+  width: 100%;
+  border: 2px solid #ffefcd;
+  border-radius: 5px;
+}
+
+.cigars__features {
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.features__header {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #a58e74;
 }
